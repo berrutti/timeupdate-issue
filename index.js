@@ -4,8 +4,8 @@ var player = videojs("my-video", options, function onPlayerReady() {
   videojs.log("Your player is ready!");
 });
 
-function handleQuality1080() {
-  player.src("lq.mp4");
+function handleQualitySwitch() {
+  player.src("hq.mp4");
   return restorePlaybackSettings(player);
 }
 
